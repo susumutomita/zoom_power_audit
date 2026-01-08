@@ -1,0 +1,13 @@
+timestamp,power_source,battery_percent,zoom_cpu_percent,zoom_mem_mb,windowserver_cpu_percent,windowserver_mem_mb,top_processes
+2025-01-08 14:30:10,Battery,85,2.6,156,1.5,234,"CptHost(2.1%) WindowServer(1.5%) Safari(0.8%)"
+2025-01-08 14:30:20,Battery,85,15.3,162,8.2,245,"CptHost(12.5%) WindowServer(8.2%) zoom.us(2.8%)"
+2025-01-08 14:30:30,Battery,85,18.7,168,12.4,256,"CptHost(15.2%) WindowServer(12.4%) zoom.us(3.5%)"
+2025-01-08 14:30:40,Battery,84,22.1,175,15.8,267,"WindowServer(15.8%) CptHost(18.3%) zoom.us(3.8%)"
+2025-01-08 14:30:50,Battery,84,25.4,182,18.3,278,"WindowServer(18.3%) CptHost(21.2%) zoom.us(4.2%)"
+2025-01-08 14:31:00,Battery,84,28.6,189,21.5,289,"CptHost(24.1%) WindowServer(21.5%) zoom.us(4.5%)"
+2025-01-08 14:31:10,Battery,83,32.3,196,24.8,300,"CptHost(27.5%) WindowServer(24.8%) zoom.us(4.8%)"
+2025-01-08 14:31:20,Battery,83,35.8,203,28.2,311,"CptHost(30.8%) WindowServer(28.2%) zoom.us(5.0%)"
+2025-01-08 14:31:30,Battery,83,18.5,198,14.6,298,"CptHost(14.2%) WindowServer(14.6%) Safari(4.3%)"
+2025-01-08 14:31:40,Battery,82,12.3,195,8.5,285,"WindowServer(8.5%) CptHost(8.8%) Safari(3.5%)"
+2025-01-08 14:31:50,Battery,82,8.6,192,5.2,275,"Safari(5.5%) CptHost(5.2%) WindowServer(5.2%)"
+2025-01-08 14:32:00,Battery,82,5.4,188,3.8,265,"Safari(4.2%) WindowServer(3.8%) CptHost(2.6%)"
