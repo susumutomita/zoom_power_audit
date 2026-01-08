@@ -1,0 +1,58 @@
+============================================================
+Zoom Power Audit - Quick Triage
+Captured: Wed Jan  8 14:30:00 JST 2025
+============================================================
+
+SYSTEM
+  macOS: 15.2 (24C101)
+  Chip: Apple M4
+
+POWER
+  Source: Battery
+  Battery: 85%
+  Low Power Mode: 0
+
+DISPLAYS
+2 display(s)
+  Display Type: Built-In Liquid Retina Display
+  Resolution: 2560 x 1664 Retina
+  UI Looks like: 1470 x 956 @ 60.00Hz
+  Connection Type: Internal
+  Display Type: External
+  Resolution: 3840 x 2160 (4K UHD)
+  UI Looks like: 1920 x 1080 @ 60.00Hz
+  Connection Type: USB-C/Thunderbolt
+
+ZOOM
+  Version: 6.3.0
+  Stats: CPU: 2.6% | Memory: 156MB
+  Processes: 2 running
+
+WINDOWSERVER
+  Stats: CPU: 1.5% | Memory: 234MB
+
+TOP 5 CPU PROCESSES
+    2.1% CPU |   0.8% MEM | CptHost
+    1.5% CPU |   2.3% MEM | WindowServer
+    0.8% CPU |   1.1% MEM | Safari
+    0.5% CPU |   1.2% MEM | zoom.us
+    0.5% CPU |   0.4% MEM | Finder
+
+PMSET SETTINGS (selected)
+  displaysleep         2
+  disksleep            10
+  sleep                1
+  hibernatemode        3
+  powernap             0
+  proximitywake        0
+  tcpkeepalive         1
+  lowpowermode         0
+
+============================================================
+Quick Checks:
+  [ ] External display at 60Hz? (not higher)
+  [ ] Zoom virtual background OFF?
+  [ ] Zoom HD video OFF?
+  [ ] Zoom low-light adjustment OFF?
+  [ ] Browser hardware acceleration ON?
+============================================================

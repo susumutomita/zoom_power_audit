@@ -1,0 +1,134 @@
+==========================================
+Zoom Power Audit - Baseline
+Collected at: Wed Jan  8 14:30:00 JST 2025
+==========================================
+
+--- macOS Version ---
+ProductName:		macOS
+ProductVersion:		15.2
+BuildVersion:		24C101
+
+--- Hardware ---
+Apple M4
+Memory: 16 GB
+
+--- Power Source ---
+Now drawing from 'Battery Power'
+ -InternalBattery-0 (id=12345678)	85%; discharging; 4:30 remaining present: true
+
+--- Battery Health (if available) ---
+Battery Information:
+      Model Information:
+          Manufacturer: Apple
+          Device Name: bq40z651
+          Pack Lot Code: 0
+          PCB Lot Code: 0
+          Firmware Version: 1001
+          Hardware Revision: 1
+          Cell Revision: 5678
+      Charge Information:
+          Charge Remaining (mAh): 5800
+          Fully Charged: No
+          Charging: No
+          Full Charge Capacity (mAh): 6800
+      Health Information:
+          Cycle Count: 42
+          Condition: Normal
+          Maximum Capacity: 100%
+
+--- Energy Saver Settings ---
+System-wide power settings:
+Currently in use:
+ standbydelaylow      10800
+ standby              1
+ halfdim              1
+ hibernatefile        /var/vm/sleepimage
+ proximitywake        0
+ gpuswitch            2
+ hibernatemode        3
+ displaysleep         2
+ sleep                1
+ lowpowermode         0
+ tcpkeepalive         1
+ powernap             0
+ disksleep            10
+
+--- Display Configuration ---
+Graphics/Displays:
+
+    Apple M4:
+
+      Chipset Model: Apple M4
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 10
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+
+        Display Type: Built-In Liquid Retina Display
+        Resolution: 2560 x 1664 Retina
+        UI Looks like: 1470 x 956 @ 60.00Hz
+        Main Display: Yes
+        Mirror: Off
+        Online: Yes
+        Automatically Adjust Brightness: Yes
+        Connection Type: Internal
+
+        LG UltraFine 4K:
+        Display Type: External
+        Resolution: 3840 x 2160 (4K UHD)
+        UI Looks like: 1920 x 1080 @ 60.00Hz
+        Mirror: Off
+        Online: Yes
+        Connection Type: USB-C/Thunderbolt
+
+--- USB Devices ---
+USB:
+
+    USB31Bus:
+
+      Host Controller Driver: AppleT6000USBXHCI
+
+        USB-C Digital AV Multiport Adapter:
+
+          Product ID: 0x1234
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 1.00
+          Speed: Up to 480 Mb/s
+          Manufacturer: Apple Inc.
+
+--- Thunderbolt Devices ---
+Thunderbolt:
+
+    Thunderbolt Bus:
+
+      Vendor Name: Apple Inc.
+      Device Name: MacBook Air
+      UID: 0x0001000012345678
+      Route String: 0
+      Firmware Version: 1.0
+
+        LG UltraFine Display:
+          UID: 0x0002000087654321
+          Route String: 1
+          Status: Connected
+
+--- Zoom Version ---
+6.3.0
+
+--- Running Zoom Processes ---
+user  12345  0.5  1.2  423456  98765 ??  S  14:25   0:05.23 /Applications/zoom.us.app/Contents/MacOS/zoom.us
+user  12346  2.1  0.8  234567  65432 ??  S  14:25   0:12.45 /Applications/zoom.us.app/Contents/Frameworks/CptHost.app/Contents/MacOS/CptHost
+
+--- Top CPU Processes at Baseline ---
+  PID  %CPU %MEM COMM
+12346   2.1  0.8 CptHost
+  456   1.5  2.3 WindowServer
+  789   0.8  1.1 Safari
+  234   0.5  0.4 Finder
+12345   0.5  1.2 zoom.us
+  567   0.3  0.2 Dock
+  890   0.2  0.5 Spotlight
+  123   0.1  0.3 loginwindow
+  345   0.1  0.1 SystemUIServer
+  678   0.0  0.2 mds_stores

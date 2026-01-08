@@ -1,0 +1,44 @@
+==========================================
+Zoom Power Audit - After
+Collected at: Wed Jan  8 15:30:00 JST 2025
+==========================================
+
+--- Power Source ---
+Now drawing from 'Battery Power'
+ -InternalBattery-0 (id=12345678)	72%; discharging; 3:15 remaining present: true
+
+--- Running Zoom Processes ---
+user  12345  0.3  1.2  423456  98765 ??  S  14:25   1:23.45 /Applications/zoom.us.app/Contents/MacOS/zoom.us
+user  12346  1.8  0.9  234567  72345 ??  S  14:25   8:45.67 /Applications/zoom.us.app/Contents/Frameworks/CptHost.app/Contents/MacOS/CptHost
+
+--- Top CPU Processes at End ---
+  PID  %CPU %MEM COMM
+  456   2.3  2.5 WindowServer
+12346   1.8  0.9 CptHost
+  789   0.6  1.2 Safari
+12345   0.3  1.2 zoom.us
+  234   0.2  0.4 Finder
+  567   0.1  0.2 Dock
+  890   0.1  0.5 Spotlight
+  123   0.1  0.3 loginwindow
+  345   0.0  0.1 SystemUIServer
+  678   0.0  0.2 mds_stores
+
+--- pmset Log (last 100 lines) ---
+2025-01-08 14:30:00 +0900 Assertions changed:
+   PID 12345(zoom.us): [0x0000012345678901] PreventUserIdleDisplaySleep named: "Zoom Meeting"
+2025-01-08 14:35:23 +0900 DarkWake from Deep Idle [CDNP] : due to SMC.OutboxNotEmpty smc.70070000 wifibt/
+2025-01-08 14:35:24 +0900 Wake reason: SMC.OutboxNotEmpty
+2025-01-08 14:45:00 +0900 Notification: com.apple.system.powermanagement.lowbatterywarn1
+2025-01-08 15:00:00 +0900 Thermal pressure state: NOMINAL
+2025-01-08 15:15:00 +0900 Battery level: 75%
+2025-01-08 15:25:00 +0900 Battery level: 73%
+2025-01-08 15:29:00 +0900 Assertions changed:
+   PID 12345(zoom.us): [0x0000012345678901] Released PreventUserIdleDisplaySleep
+
+--- System Log Power Events (last 50) ---
+2025-01-08 15:00:00.123456+0900 powerd[123]: [powerd:sleepservices] sleepServiceCapTimeout: 180 sleepCapabilityBits: 0x1
+2025-01-08 15:10:00.234567+0900 powerd[123]: [powerd:power] Battery at 76% (healthy)
+2025-01-08 15:20:00.345678+0900 powerd[123]: [powerd:power] Battery at 74% (healthy)
+2025-01-08 15:25:00.456789+0900 powerd[123]: [powerd:thermal] Thermal state: nominal
+2025-01-08 15:29:00.567890+0900 powerd[123]: [powerd:power] Battery at 72% (healthy)
